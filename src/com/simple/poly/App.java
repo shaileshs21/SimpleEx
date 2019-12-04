@@ -14,6 +14,10 @@ public class App {
     
     A z = new C();
     z.run();
+    
+    A a = new B();
+    //a.test(); //Not available
+    B.test();
   }
 
 }
