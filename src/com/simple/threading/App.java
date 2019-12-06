@@ -11,6 +11,7 @@ public class App {
     t2.start();
     try {
       t1.join();
+      t2.join();
     } catch (InterruptedException e) {
       // TODO Auto-generated catch block
       e.printStackTrace();

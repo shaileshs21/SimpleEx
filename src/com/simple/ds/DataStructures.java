@@ -39,4 +39,32 @@ public class DataStructures {
     ls.insert(56);
     ls.printList();
   }
+  
+  void HashMap(){
+    HashMap<Integer, String> map = new HashMap<>();
+    map.put(1, "ONE");
+    map.put(2, "TWO");
+    map.put(3, "ThRee");
+    map.put(10, "TEN");
+    map.put(20, "TWENTY");
+    map.put(30, "THIRTY");
+    map.put(40, "FORTY");
+    //System.out.println(map.get(2));
+    //System.out.println(map.get(30));
+    map.printAll();
+  }
+  
+  void realHashMap(){
+    java.util.HashMap<Integer, String> map = new java.util.HashMap<>();
+    map.put(1, "ONE");
+    map.put(2, "TWO");
+    map.put(3, "ThRee");
+    map.put(10, "TEN");
+    map.put(20, "TWENTY");
+    map.put(30, "THIRTY");
+    map.put(40, "FORTY");
+    for(int key:map.keySet()){
+      System.out.println(key + " " + map.get(key));
+    }
+  }
 }

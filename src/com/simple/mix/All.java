@@ -1,39 +1,63 @@
 package com.simple.mix;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class All {
 
-  
-  //remove duplicates from array
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  // remove duplicates from array
+
+  void removeDuplicates2() {
+    int nums[] = new int[] {10, 20, 30, 25, 15, 10, 35, 20, 25, 65, 50, 75, 35, 90, 15, 25};
+    int size = nums.length;
+    for (int i = 0; i < size; i++) {
+
+    }
+
+  }
+
+  void removeDuplicates() {
+    int nums[] = new int[] {10, 20, 30, 25, 15, 10, 35, 20, 25, 65, 50, 75, 35, 90, 15, 25};
+    int size = nums.length;
+    int newSize = 1;
+   
+    for (int i = 0; i < size; i++) {
+      System.out.print(nums[i] + " ");
+    }
+    System.out.println("");
+    System.out.println("After Removing Duplicates");
+   
+
+    for (int i = 1; i < size; i++) {
+      int num = nums[i];
+      boolean flag = true;
+      int initial_position = i;
+      // found duplicate/ already exists
+      for (int j = 0; j < newSize; j++) {
+        if (nums[j] == num) {
+          for (int k = i; k < size - 1; k++) {
+            nums[k] = nums[k + 1];
+          }
+          size = size - 1;
+          flag = false;
+          
+        }
+      }
+      // New entry
+      if (flag) {
+        newSize += 1;
+      }else{
+        i = initial_position-1;
+      }
+
+    }
+
+    for (int i = 0; i < newSize; i++) {
+      System.out.print(nums[i] + " ");
+    }
+
+  }
+
   public void patterns() {
 
     int n = 5;
@@ -238,7 +262,7 @@ public class All {
       return "Return from try block";
     } finally {
       System.out.println("Executing Finally Block");
-      //return "Return from finally block";
+      // return "Return from finally block";
     }
   }
 }

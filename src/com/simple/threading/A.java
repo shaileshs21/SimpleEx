@@ -6,12 +6,12 @@ public class A extends Thread{
     System.out.println("P");
     System.out.println("I");
     
-    try {
+/*    try {
       sleep(100);
     } catch (InterruptedException e) {
       // TODO Auto-generated catch block
       e.printStackTrace();
-    }
+    }*/
     System.out.println("N");
     System.out.println("G");
     

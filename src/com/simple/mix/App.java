@@ -12,7 +12,10 @@ public class App {
     //obj.bubbleSort();
     //obj.patterns();
     //obj.maxSumInc();
-    System.out.println(obj.returnFromTry());
+    //System.out.println(obj.returnFromTry());
+    obj.removeDuplicates();
+    
+     
 
   }
 
