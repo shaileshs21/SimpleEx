@@ -1,9 +1,48 @@
 package com.simple.mix;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
 
 public class All {
+
+  public void firstNonrepeatativeChar() {
+   BigDecimal res;
+   BigDecimal a = new BigDecimal(355);
+   BigDecimal divisor= new BigDecimal(113);
+   res = a.divide(divisor,21,RoundingMode.FLOOR);
+
+   System.out.println(res);
+  }
+
+  public void mergeAndSortArrays() {
+    int arr1[] = new int[] {7, -5, 3, 8, -4, 11, -19, 21};
+    int arr2[] = new int[] {6, 13, -7, 0, 11, -4, 3, -5};
+    List<Integer> list = new LinkedList<Integer>();
+
+    for (int i = 0; i < arr1.length; i++) {
+      if (!list.contains(arr1[i])) {
+        list.add(arr1[i]);
+      }
+    }
+
+    for (int i = 0; i < arr2.length; i++) {
+      if (!list.contains(arr2[i])) {
+        list.add(arr2[i]);
+      }
+    }
+
+    Collections.sort(list);
+    for (Integer integer : list) {
+      System.out.print(integer + " ");
+    }
+  }
 
   // remove duplicates from array
 
@@ -20,13 +59,12 @@ public class All {
     int nums[] = new int[] {10, 20, 30, 25, 15, 10, 35, 20, 25, 65, 50, 75, 35, 90, 15, 25};
     int size = nums.length;
     int newSize = 1;
-   
+
     for (int i = 0; i < size; i++) {
       System.out.print(nums[i] + " ");
     }
     System.out.println("");
     System.out.println("After Removing Duplicates");
-   
 
     for (int i = 1; i < size; i++) {
       int num = nums[i];
@@ -40,14 +78,14 @@ public class All {
           }
           size = size - 1;
           flag = false;
-          
+
         }
       }
       // New entry
       if (flag) {
         newSize += 1;
-      }else{
-        i = initial_position-1;
+      } else {
+        i = initial_position - 1;
       }
 
     }

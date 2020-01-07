@@ -20,24 +20,26 @@ public class CircularLinkedList {
     }
   }
 
-  Node getHead(){
+  Node getHead() {
     return this.last.next;
   }
+
   void delete(int value) {
 
   }
 
   void printList() {
-    
+
     Node node = getHead();
+
     while (node != null) {
       System.out.print(node.data + " ");
       node = node.next;
-      if(node == getHead()){
+      if (node == getHead()) {
         break;
       }
     }
-   // System.out.println("");
+    // System.out.println("");
   }
 
   public class Node {

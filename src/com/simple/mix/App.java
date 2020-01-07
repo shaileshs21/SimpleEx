@@ -13,7 +13,9 @@ public class App {
     //obj.patterns();
     //obj.maxSumInc();
     //System.out.println(obj.returnFromTry());
-    obj.removeDuplicates();
+    //obj.removeDuplicates();
+    //obj.mergeAndSortArrays();
+    obj.firstNonrepeatativeChar();
     
      
 
