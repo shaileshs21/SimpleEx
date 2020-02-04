@@ -35,6 +35,8 @@ public class App {
     StringBuffer sb = new StringBuffer();
     sb.append(s5);
     System.out.println(sb.hashCode());
+    System.out.println("-----------------------intern()----------------------------------");
+    //intern () method
     
   }
 

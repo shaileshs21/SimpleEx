@@ -18,7 +18,24 @@ public class App {
     // gfg.arrayListOperation2();
     //gfg.queueOperatios();
     //gfg.bitwise_operator();
-    gfg.priorityQueue();
+    //gfg.priorityQueue();
+    //gfg.stackOperatios();
+    //gfg.queueOperations();
+   //gfg.queueOperations2();
+   gfg.queueOperations3();
+    //gfg.reverseString();
+    //gfg.parenthesisChecker();
+    //gfg.reverseWords();
+    
+    /*Integer[] intArray = { 1, 2, 3 };
+    String[] stringArray = {"Hello", "World"};
+    gfg.printArray(intArray);
+    gfg.printArray(stringArray);*/
+    //gfg.sumOfArrayofnIntegers();
+    //gfg.div8();
+    //gfg.sentenceToKeypad();
+    //gfg.firstCircularTour();
+    //gfg.nonRepeatingCharacter();
   }
 
 }
